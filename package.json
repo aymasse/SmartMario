@@ -1,0 +1,16 @@
+{
+  "name": "SmartMario",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "compression": "^1.6.2",
+    "express": "^4.15.0",
+    "serve-favicon": "^2.4.1",
+    "body-parser": "latest",
+    "pug": "^2.0.0-beta11"
+  },
+  "devDependencies": {
+    "standard": "latest",
+    "pug-lint": "latest"
+  }
+}

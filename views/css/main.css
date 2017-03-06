@@ -1,0 +1,39 @@
+.visited{
+    opacity: 0.2;
+    background-color: lightblue;
+}
+.mushroom{
+    background: url('../sprites/mushroom.png') no-repeat center;
+    background-size: contain;
+}
+.optimal{
+    background-color: lightyellow;
+}
+.visited.mushroom{
+    opacity: 0.2;
+    background: lightblue url('../sprites/mushroom.png') no-repeat center;
+    background-size: contain;
+}
+.optimal.mushroom{
+    background: lightyellow url('../sprites/mushroom.png') no-repeat center;
+    background-size: contain;
+}
+.optimal.visited{
+    opacity: 0.2;
+    background-color: lightgreen;
+}
+.optimal.visited.mushroom{
+    opacity: 0.2;
+    background: lightgreen url('../sprites/mushroom.png') no-repeat center;
+    background-size: contain;
+}
+#mario{
+    background: lightblue url('../sprites/mario.png') no-repeat center;
+    opacity: 1;
+    background-size: contain;
+}
+#peach{
+    background: url('../sprites/peach.png') no-repeat center;
+    background-size: contain;
+    opacity: 1;
+}

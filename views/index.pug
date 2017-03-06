@@ -1,0 +1,34 @@
+html
+    head
+        title=title
+        link(rel='stylesheet', type="text/css", href='./css/main.css')
+        link(rel="stylesheet" href="./css/bootstrap.css")
+        link(rel="stylesheet" href="./css/bootstrap-theme.css")
+        script(src="./js/jquery-3.1.1.min.js")
+        script(src="./js/bootstrap.js")
+    body
+        if running
+            script.
+                var board = !{JSON.stringify(board)};
+            #gameBoard
+            .row
+                .col-md-1
+                .col-md-2
+                    label
+                        | Number of picked mushrooms :
+                        p#nbPickedMushrooms 0
+        .row
+            .col-md-1
+            .col-md-2
+                form(method='GET' action='/game')
+                    .form-group
+                        label(for='size') Size:
+                        input#size.form-control(type='number', placeholder='Size', name='size', min='3', max='20')
+                    .form-group
+                        label(for='mush') % of mushrooms:
+                        input#mush.form-control(type='number', min='5', max='50', name='mush' step='5', placeholder='% of mushrooms')
+                    button(type="submit" class="btn btn-default") Here we go !
+            .col-md-1
+                button#optimalPath Toggle Optimal Path
+        if running
+            script(src="./js/game.js")
