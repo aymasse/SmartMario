@@ -1,0 +1,12 @@
+= SmartMario
+Aymeric MASSE <aym.masse@gmail.com>
+
+Simple game developed during a course at UQAC.
+
+In root directory :
+
+[source,bash]
+npm install
+node server.js
+
+Then open web browser at designated port.
